@@ -83,4 +83,9 @@ contract StudentRegister{
          */ 
         return(students[studentId].studentId,students[studentId].name,students[studentId].course,students[studentId].totalMarks,students[studentId].percentage);
     }
+
+    receive() external payable {
+        // Optionally, you can include custom logic here if needed.
+        // This function is executed when the contract receives Ether without a specific function call.
+    }
 }
